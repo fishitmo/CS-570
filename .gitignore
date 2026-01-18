@@ -1,0 +1,24 @@
+﻿# Virtual environments
+venv/
+venv_CS570/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Data files (optional - remove if you want to include them)
+*.csv
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
