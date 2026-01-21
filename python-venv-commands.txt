@@ -1,0 +1,35 @@
+# Python Virtual Environment Commands for VSCode
+
+## 1. Create the virtual environment
+python -m venv venv
+
+## 2. Activate the environment
+
+### Windows (Command Prompt):
+venv\Scripts\activate
+
+### Windows (PowerShell):
+venv\Scripts\Activate.ps1
+
+### macOS/Linux:
+source venv/bin/activate
+
+## 3. Verify it's active
+python --version
+
+## 4. Install packages
+pip install <package-name>
+
+## 5. Save installed packages to requirements.txt
+pip freeze > requirements.txt
+
+## 6. Install from requirements.txt
+pip install -r requirements.txt
+
+## 7. Deactivate when done
+deactivate
+
+## VSCode Tips:
+# - Press Ctrl+Shift+P and type "Python: Select Interpreter"
+# - Choose the interpreter from your venv folder
+# - VSCode will automatically activate the venv in new terminals

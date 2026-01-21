@@ -3211,3 +3211,241 @@ Resolving package/object name conflict in favor of package scala.caps. The objec
 2026.01.17 23:57:13 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/Coursera_course/scala-project/src/main/scala/example/example.worksheet.sc]
 2026.01.17 23:57:13 INFO  dotty.tools.dotc.ast.Trees$UnAssignedTypeException: type of Number(1,Whole(10)) is not assigned (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-17\r_compiler-error_(CS570_5f87a554ef97)_23-57-13-648.md")
 2026.01.17 23:57:13 WARN  Could not find semantic tokens for: file:///D:/SFBU/Spring_semester_2026/CS570/Coursera_course/scala-project/src/main/scala/example/example.worksheet.sc
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+Resolving package/object name conflict in favor of package scala.caps. The object will be inaccessible.
+2026.01.18 02:14:32 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/Coursera_course/scala-project/src/main/scala/example/example.worksheet.sc]
+2026.01.18 02:14:32 INFO  dotty.tools.dotc.ast.Trees$UnAssignedTypeException: type of Number(1,Whole(10)) is not assigned (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_(CS570_5f87a554ef97)_02-14-32-368.md")
+2026.01.18 02:14:32 WARN  Could not find semantic tokens for: file:///D:/SFBU/Spring_semester_2026/CS570/Coursera_course/scala-project/src/main/scala/example/example.worksheet.sc
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+Resolving package/object name conflict in favor of package scala.caps. The object will be inaccessible.
+2026.01.18 02:14:32 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/Coursera_course/scala-project/src/main/scala/example/example.worksheet.sc]
+2026.01.18 02:14:32 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition package object collection in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/collection/package.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_(CS570_5f87a554ef97)_02-14-32-569.md")
+2026.01.18 02:14:34 ERROR worksheet: D:\SFBU\Spring_semester_2026\CS570\Coursera_course\scala-project\src\main\scala\example\example.worksheet.sc
+java.lang.ClassCastException: class repl.MdocSession$ cannot be cast to class mdoc.internal.document.DocumentBuilder (repl.MdocSession$ is in unnamed module of loader dotty.tools.repl.AbstractFileClassLoader @5ff564bd; mdoc.internal.document.DocumentBuilder is in unnamed module of loader java.net.URLClassLoader @7486e497)
+	at mdoc.internal.markdown.MarkdownBuilder$.buildDocument(MarkdownBuilder.scala:44)
+	at mdoc.internal.worksheets.WorksheetProvider.evaluateWorksheet(WorksheetProvider.scala:39)
+	at mdoc.internal.worksheets.Mdoc.evaluateWorksheet(Mdoc.scala:86)
+	at scala.meta.internal.worksheets.WorksheetProvider.scala$meta$internal$worksheets$WorksheetProvider$$evaluateWorksheet(WorksheetProvider.scala:453)
+	at scala.meta.internal.worksheets.WorksheetProvider$$anon$1.liftedTree1$1(WorksheetProvider.scala:334)
+	at scala.meta.internal.worksheets.WorksheetProvider$$anon$1.run(WorksheetProvider.scala:334)
+
+2026.01.18 02:14:34 INFO  time: evaluated worksheet 'example.worksheet.sc' in 2.37s
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+Resolving package/object name conflict in favor of package scala.caps. The object will be inaccessible.
+2026.01.18 02:14:34 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/Coursera_course/scala-project/src/main/scala/example/example.worksheet.sc]
+2026.01.18 02:14:34 INFO  dotty.tools.dotc.ast.Trees$UnAssignedTypeException: type of Number(1,Whole(10)) is not assigned (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_(CS570_5f87a554ef97)_02-14-34-139.md")
+2026.01.18 02:14:34 WARN  Could not find semantic tokens for: file:///D:/SFBU/Spring_semester_2026/CS570/Coursera_course/scala-project/src/main/scala/example/example.worksheet.sc
+2026.01.18 02:15:57 INFO  no build target found for D:\SFBU\Spring_semester_2026\CS570\Coursera_course\scala-project\src\main\scala\example\scala-practice.sc. Using presentation compiler with project's scala-library version: 3.8.0
+2026.01.18 02:15:57 INFO  no build target found for D:\SFBU\Spring_semester_2026\CS570\Coursera_course\scala-project\src\main\scala\example\scala-practice.sc. Using presentation compiler with project's scala-library version: 3.8.0
+2026.01.18 02:15:58 WARN  Could not find semantic tokens for: file:///D:/SFBU/Spring_semester_2026/CS570/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc
+2026.01.18 02:15:59 INFO  time: Imported build in 0.14s
+2026.01.18 02:15:59 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:15:59 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:15:59 INFO  scalac -help  gives more information
+2026.01.18 02:15:59 INFO  time: compiled CS570_87a554ef97 in 77ms
+2026.01.18 02:15:59 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:15:59 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:15:59 INFO  scalac -help  gives more information
+2026.01.18 02:15:59 INFO  time: compiled CS570_87a554ef97 in 25ms
+2026.01.18 02:16:02 INFO  time: indexed workspace in 2.62s
+2026.01.18 02:16:03 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:16:03 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:16:03 INFO  scalac -help  gives more information
+2026.01.18 02:16:03 INFO  time: compiled CS570_87a554ef97 in 27ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:16:04 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:16:04 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition class LowPriorityImplicits2 in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/LowPriorityImplicits2.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-16-04-545.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+Jan 18, 2026 2:16:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 223
+2026.01.18 02:16:04 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:16:04 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition object Ensuring in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/Predef.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-16-04-776.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:16:04 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:16:04 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition class LowPriorityImplicits in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/LowPriorityImplicits.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-16-04-963.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:16:04 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:16:04 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition class LowPriorityImplicits in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/LowPriorityImplicits.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-16-05-091.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:16:07 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:16:07 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:16:07 INFO  scalac -help  gives more information
+2026.01.18 02:16:07 INFO  time: compiled CS570_87a554ef97 in 18ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+Jan 18, 2026 2:44:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 273
+2026.01.18 02:44:33 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:44:33 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:44:33 INFO  scalac -help  gives more information
+2026.01.18 02:44:33 INFO  time: compiled CS570_87a554ef97 in 20ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:35 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:44:35 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition class LowPriorityImplicits in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/LowPriorityImplicits.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-44-35-007.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:35 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:44:35 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition object Predef in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/Predef.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-44-35-266.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:35 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:44:35 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition object Predef in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/Predef.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-44-35-552.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:36 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:44:36 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition object Predef in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/Predef.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-44-36-344.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:40 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:44:40 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:44:40 INFO  scalac -help  gives more information
+2026.01.18 02:44:40 INFO  time: compiled CS570_87a554ef97 in 19ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:44 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:44:44 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:44:44 INFO  scalac -help  gives more information
+2026.01.18 02:44:44 INFO  time: compiled CS570_87a554ef97 in 16ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:49 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:44:49 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:44:49 INFO  scalac -help  gives more information
+2026.01.18 02:44:49 INFO  time: compiled CS570_87a554ef97 in 19ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:52 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:44:52 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition class LowPriorityImplicits in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/LowPriorityImplicits.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-44-52-214.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:52 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:44:52 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition object Predef in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/Predef.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-44-52-373.md")
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:44:52 INFO  Created report: Optional[file:///D:/SFBU/Spring_semester_2026/CS570/.scala-build/CS570_87a554ef97/src_generated/main/Coursera_course/scala-project/src/main/scala/example/scala-practice.sc.scala]
+2026.01.18 02:44:52 INFO  dotty.tools.dotc.core.UnpicklingError: Could not read definition object Predef in C:\Users\werka\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\3.8.0\scala-library-3.8.0.jar(scala/Predef.tasty). Caused by the following exception:
+java.lang.AssertionError: assertion failed: `-Xread-docs` enabled, but no `docCtx` is set.
+
+Run with -Ydebug-unpickling to see full stack trace. (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\metals-full\2026-01-18\r_compiler-error_02-44-52-613.md")
+2026.01.18 02:45:27 INFO  compiling cs570_87a554ef97 (3 scala sources)
+2026.01.18 02:45:27 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:27 INFO  scalac -help  gives more information
+2026.01.18 02:45:27 INFO  time: compiled CS570_87a554ef97 in 21ms
+2026.01.18 02:45:27 INFO  compiling cs570_87a554ef97 (3 scala sources)
+2026.01.18 02:45:27 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:27 INFO  scalac -help  gives more information
+2026.01.18 02:45:27 INFO  time: compiled CS570_87a554ef97 in 26ms
+2026.01.18 02:45:29 INFO  time: indexed workspace in 1.95s
+2026.01.18 02:45:29 INFO  Cancelling compilation on scala-cli server
+2026.01.18 02:45:30 INFO  compiling cs570_87a554ef97 (2 scala sources)
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:45:30 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:30 INFO  scalac -help  gives more information
+2026.01.18 02:45:30 INFO  time: compiled CS570_87a554ef97 in 19ms
+2026.01.18 02:45:30 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:45:30 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:30 INFO  scalac -help  gives more information
+2026.01.18 02:45:30 INFO  time: compiled CS570_87a554ef97 in 15ms
+2026.01.18 02:45:30 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:45:30 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:30 INFO  scalac -help  gives more information
+2026.01.18 02:45:30 INFO  time: compiled CS570_87a554ef97 in 24ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:45:32 INFO  time: indexed workspace in 1.52s
+2026.01.18 02:45:33 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:45:33 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:33 INFO  scalac -help  gives more information
+2026.01.18 02:45:33 INFO  time: compiled CS570_87a554ef97 in 14ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:45:54 INFO  compiling cs570_87a554ef97 (3 scala sources)
+2026.01.18 02:45:54 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:54 INFO  scalac -help  gives more information
+2026.01.18 02:45:54 INFO  time: compiled CS570_87a554ef97 in 17ms
+2026.01.18 02:45:54 INFO  compiling cs570_87a554ef97 (3 scala sources)
+2026.01.18 02:45:54 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:54 INFO  scalac -help  gives more information
+2026.01.18 02:45:54 INFO  time: compiled CS570_87a554ef97 in 17ms
+2026.01.18 02:45:56 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:45:56 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:56 INFO  scalac -help  gives more information
+2026.01.18 02:45:56 INFO  time: compiled CS570_87a554ef97 in 17ms
+2026.01.18 02:45:56 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:45:56 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:56 INFO  scalac -help  gives more information
+2026.01.18 02:45:56 INFO  time: compiled CS570_87a554ef97 in 16ms
+2026.01.18 02:45:56 INFO  time: indexed workspace in 2.63s
+2026.01.18 02:45:58 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:45:58 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:45:58 INFO  scalac -help  gives more information
+2026.01.18 02:45:58 INFO  time: compiled CS570_87a554ef97 in 13ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 02:45:58 INFO  time: indexed workspace in 2s
+2026.01.18 02:46:00 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.01.18 02:46:00 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.01.18 02:46:00 INFO  scalac -help  gives more information
+2026.01.18 02:46:00 INFO  time: compiled CS570_87a554ef97 in 14ms
+11 is not a valid choice for -java-output-version
+  scalac -help  gives more information
+2026.01.18 04:07:03 INFO  Shutting down server
+2026.01.18 04:07:03 INFO  shutting down Metals
+2026.01.18 04:07:03 INFO  Shut down connection with build server.
+2026.01.18 04:07:03 INFO  Exiting server
+2026.01.18 04:07:04 WARN  Error requesting Scala script import
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+

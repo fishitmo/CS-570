@@ -1,8 +1,9 @@
+package Coursera_course.scala$minusproject.src.main.scala.example
 
 
-final class tempCodeRunnerFile$_ {
-def args = tempCodeRunnerFile_sc.args$
-def scriptPath = """d:\SFBU\Spring_semester_2026\CS570\Coursera_course\scala-project\src\main\scala\example\tempCodeRunnerFile.sc"""
+final class scala$minuspractice$_ {
+def args = scala$minuspractice_sc.args$
+def scriptPath = """Coursera_course/scala-project/src/main/scala/example/scala-practice.sc"""
 /*<script>*/
  val computed = {                                                                                                                         
                  val x = 10 
@@ -12,7 +13,7 @@ def scriptPath = """d:\SFBU\Spring_semester_2026\CS570\Coursera_course\scala-pro
 /*</script>*/ /*<generated>*//*</generated>*/
 }
 
-object tempCodeRunnerFile_sc {
+object scala$minuspractice_sc {
   private var args$opt0 = Option.empty[Array[String]]
   def args$set(args: Array[String]): Unit = {
     args$opt0 = Some(args)
@@ -22,7 +23,7 @@ object tempCodeRunnerFile_sc {
     sys.error("No arguments passed to this script")
   }
 
-  lazy val script = new tempCodeRunnerFile$_
+  lazy val script = new scala$minuspractice$_
 
   def main(args: Array[String]): Unit = {
     args$set(args)
@@ -30,5 +31,5 @@ object tempCodeRunnerFile_sc {
   }
 }
 
-export tempCodeRunnerFile_sc.script as `tempCodeRunnerFile`
+export scala$minuspractice_sc.script as `scala-practice`
 
