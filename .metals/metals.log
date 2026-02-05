@@ -3601,3 +3601,82 @@ java.lang.ClassCastException: class repl.MdocSession$ cannot be cast to class md
 2026.01.21 19:24:21 INFO  time: compiled CS570_87a554ef97 in 29ms
 2026.01.21 19:24:26 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
 2026.01.21 19:24:27 INFO  time: indexed workspace in 12s
+2026.02.01 00:46:54 INFO  Started: Metals version 1.6.5 in folders 'D:\SFBU\Spring_semester_2026\CS570' for client Visual Studio Code 1.108.1.
+2026.02.01 00:46:54 INFO  Memory monitor started
+2026.02.01 00:47:00 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.01 00:47:02 INFO  Attempting to connect to the build server...
+2026.02.01 00:47:02 INFO  Running BSP server List(C:\Users\werka\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-options-v2.json, --json-launcher-options, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-launcher-options.json, --envs-file, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-envs.json, D:\SFBU\Spring_semester_2026\CS570)
+2026.02.01 00:47:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SFBU\Spring_semester_2026\CS570\.metals\bsp.trace.json or C:\Users\werka\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.02.01 00:47:09 INFO  BSP server: Checking https://github.com/coursier/jvm-index/raw/master/index.json
+2026.02.01 00:47:09 INFO  BSP server: Checked https://github.com/coursier/jvm-index/raw/master/index.json
+2026.02.01 00:47:09 INFO  BSP server: Downloading https://github.com/coursier/jvm-index/raw/master/index.json
+2026.02.01 00:47:09 INFO  BSP server: Downloaded https://github.com/coursier/jvm-index/raw/master/index.json
+2026.02.01 00:47:15 INFO  BSP server: Starting compilation server
+2026.02.01 00:47:42 INFO  time: Connected to build server in 39s
+2026.02.01 00:47:42 INFO  Connected to Build server: scala-cli v1.12.0
+2026.02.01 00:47:42 INFO  time: Imported build in 0.19s
+2026.02.01 00:47:45 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.02.01 00:47:47 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.02.01 00:47:47 INFO  scalac -help  gives more information
+2026.02.01 00:47:47 INFO  time: compiled CS570_87a554ef97 in 2.04s
+2026.02.01 00:47:47 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.02.01 00:47:47 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.02.01 00:47:47 INFO  scalac -help  gives more information
+2026.02.01 00:47:47 INFO  time: compiled CS570_87a554ef97 in 42ms
+Feb 01, 2026 12:47:53 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.02.01 00:47:55 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.01 00:47:55 INFO  time: indexed workspace in 13s
+Feb 02, 2026 6:42:46 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb 02, 2026 6:42:51 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb 03, 2026 6:16:09 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.02.04 18:14:54 INFO  Started: Metals version 1.6.5 in folders 'D:\SFBU\Spring_semester_2026\CS570' for client Visual Studio Code 1.108.1.
+2026.02.04 18:14:54 INFO  Memory monitor started
+2026.02.04 18:15:00 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.04 18:15:01 INFO  Attempting to connect to the build server...
+2026.02.04 18:15:01 INFO  Running BSP server List(C:\Users\werka\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-options-v2.json, --json-launcher-options, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-launcher-options.json, --envs-file, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-envs.json, D:\SFBU\Spring_semester_2026\CS570)
+2026.02.04 18:15:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SFBU\Spring_semester_2026\CS570\.metals\bsp.trace.json or C:\Users\werka\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.02.04 18:15:09 INFO  BSP server: Checking https://github.com/coursier/jvm-index/raw/master/index.json
+2026.02.04 18:15:09 INFO  BSP server: Checked https://github.com/coursier/jvm-index/raw/master/index.json
+2026.02.04 18:15:09 INFO  BSP server: Downloading https://github.com/coursier/jvm-index/raw/master/index.json
+2026.02.04 18:15:09 INFO  BSP server: Downloaded https://github.com/coursier/jvm-index/raw/master/index.json
+2026.02.04 18:15:15 INFO  BSP server: Starting compilation server
+2026.02.04 18:15:43 INFO  time: Connected to build server in 41s
+2026.02.04 18:15:43 INFO  Connected to Build server: scala-cli v1.12.0
+2026.02.04 18:15:43 INFO  time: Imported build in 0.16s
+2026.02.04 18:15:45 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.02.04 18:15:47 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.02.04 18:15:47 INFO  scalac -help  gives more information
+2026.02.04 18:15:47 INFO  time: compiled CS570_87a554ef97 in 1.84s
+2026.02.04 18:15:47 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.02.04 18:15:47 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.02.04 18:15:47 INFO  scalac -help  gives more information
+2026.02.04 18:15:47 INFO  time: compiled CS570_87a554ef97 in 23ms
+2026.02.04 18:15:55 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.04 18:15:55 INFO  time: indexed workspace in 12s
+2026.02.04 19:28:34 INFO  Shutting down server
+2026.02.04 19:28:34 INFO  Memory monitor stopped
+2026.02.04 19:28:34 INFO  shutting down Metals
+2026.02.04 19:28:34 INFO  Shut down connection with build server.
+2026.02.04 19:28:34 INFO  Exiting server
+2026.02.04 19:31:22 INFO  Started: Metals version 1.6.5 in folders 'D:\SFBU\Spring_semester_2026\CS570' for client Visual Studio Code 1.108.1.
+2026.02.04 19:31:22 INFO  Memory monitor started
+2026.02.04 19:31:24 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.04 19:31:25 INFO  Attempting to connect to the build server...
+2026.02.04 19:31:25 INFO  Running BSP server List(C:\Users\werka\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-options-v2.json, --json-launcher-options, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-launcher-options.json, --envs-file, D:\SFBU\Spring_semester_2026\CS570\.scala-build\ide-envs.json, D:\SFBU\Spring_semester_2026\CS570)
+2026.02.04 19:31:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SFBU\Spring_semester_2026\CS570\.metals\bsp.trace.json or C:\Users\werka\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.02.04 19:31:36 INFO  time: Connected to build server in 10s
+2026.02.04 19:31:36 INFO  Connected to Build server: scala-cli v1.12.0
+2026.02.04 19:31:38 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.02.04 19:31:38 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.02.04 19:31:38 INFO  scalac -help  gives more information
+2026.02.04 19:31:38 INFO  time: compiled CS570_87a554ef97 in 0.11s
+2026.02.04 19:31:38 INFO  compiling cs570_87a554ef97 (2 scala sources)
+2026.02.04 19:31:38 INFO  11 is not a valid choice for -java-output-version (full report at: "D:\SFBU\Spring_semester_2026\CS570\.metals\.reports\bloop\2026-01-17\r_11 is not a valid ch..._05-54-26-314.md")
+2026.02.04 19:31:38 INFO  scalac -help  gives more information
+2026.02.04 19:31:38 INFO  time: compiled CS570_87a554ef97 in 22ms
+2026.02.04 19:31:43 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.04 19:31:43 INFO  time: indexed workspace in 8.04s
