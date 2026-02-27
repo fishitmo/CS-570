@@ -1,0 +1,45 @@
+# ── Data files (large, not committed) ────────────────────────────
+data/raw/
+data/processed/
+*.dat
+*.zip
+
+# ── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.env
+
+# ── Jupyter ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Spark / Java ─────────────────────────────────────────────────
+metastore_db/
+derby.log
+spark-warehouse/
+*.log
+
+# ── Streamlit ─────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── OS / IDE ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+.idea/
+
+# ── Testing ───────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
