@@ -22,3 +22,19 @@ data/
 # OS files
 .DS_Store
 Thumbs.db
+
+
+
+# Scala / Metals IDE cache
+.metals/
+.bloop/
+*.lock.db
+*.mv.db
+
+# MovieLens data (too large for git)
+ml-1m/
+
+# Python
+__pycache__/
+.venv/
+*.pyc
