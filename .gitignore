@@ -38,3 +38,22 @@ ml-1m/
 __pycache__/
 .venv/
 *.pyc
+
+# Large / binary course files (PDFs, Office docs, HTML exports)
+*.pdf
+*.docx
+*.xlsx
+*.html
+
+# Temporary Office lock files
+~$*
+
+# Generated notebook HTML/PDF exports
+*.ipynb_checkpoints/
+
+# Personal data / JSON submissions (may contain personal info)
+week-4/W4_Fsehaye_Medhanie.json
+week-4/second_attempt/*.json
+
+# Generated plot images (reproducible from notebooks)
+Project-CS-570/notebooks/**/*.png

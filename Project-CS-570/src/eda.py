@@ -117,3 +117,139 @@ def top_n_movies_by_avg(df: DataFrame, n: int = 50, min_ratings: int = 100) -> p
           .limit(n)
           .toPandas()
     )
+    
+# ── Occupation Analysis ──────────────────────────────────────────────────────
+OCCUPATION_LABELS = {
+    0: "other", 1: "academic/educator", 2: "artist", 3: "clerical/admin",
+    4: "college/grad student", 5: "customer service", 6: "doctor/health care",
+    7: "executive/managerial", 8: "farmer", 9: "homemaker", 10: "K-12 student",
+    11: "lawyer", 12: "programmer", 13: "retired", 14: "sales/marketing",
+    15: "scientist", 16: "self-employed", 17: "technician/engineer",
+    18: "tradesman/craftsman", 19: "unemployed", 20: "writer",
+}
+
+def occupation_analysis(df):
+    """Returns Pandas DF: occupation label, user count, total ratings, avg rating."""
+    from pyspark.sql import functions as F
+    mapping_expr = F.create_map([F.lit(x) for kv in OCCUPATION_LABELS.items() for x in kv])
+    result = (
+        df.withColumn("occ_label", mapping_expr[F.col("Occupation")])
+          .groupBy("occ_label")
+          .agg(
+              F.countDistinct("UserID").alias("users"),
+              F.count("Rating").alias("total_ratings"),
+              F.round(F.avg("Rating"), 3).alias("avg_rating"),
+          )
+          .orderBy(F.desc("total_ratings"))
+    )
+    return result.toPandas()
+
+
+def occupation_chart(df):
+    """Horizontal bar chart: avg rating by occupation."""
+    import plotly.express as px
+    pdf = occupation_analysis(df)
+    fig = px.bar(
+        pdf, x="avg_rating", y="occ_label", orientation="h",
+        color="avg_rating", color_continuous_scale="RdYlGn",
+        hover_data=["users", "total_ratings"],
+        title="Average Rating by Occupation",
+        labels={"occ_label": "Occupation", "avg_rating": "Avg Rating"},
+    )
+    fig.update_layout(yaxis={"categoryorder": "total ascending"})
+    return fig
+
+
+# ── Movie Release Year / Decade ───────────────────────────────────────────────
+def decade_rating_trends(df):
+    """Returns Pandas DF: decade, num_movies, num_ratings, avg_rating."""
+    from pyspark.sql import functions as F
+    result = (
+        df.withColumn("year", F.regexp_extract("Title", r"\((\d{4})\)\s*$", 1).cast("int"))
+          .filter(F.col("year").isNotNull() & (F.col("year") > 0))
+          .withColumn("decade", (F.col("year") / 10).cast("int") * 10)
+          .groupBy("decade")
+          .agg(
+              F.countDistinct("MovieID").alias("num_movies"),
+              F.count("Rating").alias("num_ratings"),
+              F.round(F.avg("Rating"), 3).alias("avg_rating"),
+          )
+          .orderBy("decade")
+    )
+    return result.toPandas()
+
+
+def decade_chart(df):
+    import plotly.graph_objects as go
+    pdf = decade_rating_trends(df)
+    fig = go.Figure()
+    fig.add_bar(x=pdf["decade"].astype(str), y=pdf["num_ratings"], name="# Ratings", yaxis="y1")
+    fig.add_scatter(x=pdf["decade"].astype(str), y=pdf["avg_rating"], name="Avg Rating",
+                    yaxis="y2", mode="lines+markers", line=dict(color="orange"))
+    fig.update_layout(
+        title="Movie Decade: Volume vs Quality",
+        yaxis=dict(title="# Ratings"),
+        yaxis2=dict(title="Avg Rating", overlaying="y", side="right", range=[3, 4.5]),
+    )
+    return fig
+
+
+# ── Genre × Age Group ─────────────────────────────────────────────────────────
+AGE_LABELS = {1: "<18", 18: "18-24", 25: "25-34", 35: "35-44",
+              45: "45-49", 50: "50-55", 56: "56+"}
+
+def genre_age_heatmap(df):
+    """Returns Plotly heatmap of avg rating per (age_group, genre)."""
+    from pyspark.sql import functions as F
+    import plotly.express as px
+    mapping_expr = F.create_map([F.lit(x) for kv in AGE_LABELS.items() for x in kv])
+    result = (
+        df.withColumn("age_label", mapping_expr[F.col("Age")])
+          .withColumn("genre", F.explode(F.split("Genres", r"\|")))
+          .groupBy("age_label", "genre")
+          .agg(
+              F.count("Rating").alias("n"),
+              F.round(F.avg("Rating"), 2).alias("avg_rating"),
+          )
+          .filter(F.col("n") >= 200)
+    )
+    pdf = result.toPandas().pivot(index="age_label", columns="genre", values="avg_rating")
+    fig = px.imshow(pdf, text_auto=True, color_continuous_scale="RdYlGn",
+                    title="Avg Rating: Age Group × Genre", aspect="auto")
+    return fig
+
+
+# ── D2: Feature Correlation Analysis ─────────────────────────────────────────
+
+def correlation_matrix(df, feature_cols: list) ->"plotly figure":
+    """ Pearson correlation heatmap between numeric features and high_rating."""
+    import numpy as np
+    import plotly.express as px 
+    
+    pdf = df.select(feature_cols).toPandas()
+    corr = pdf.corr()
+    
+    fig = px.imshow(
+        corr,
+        text_auto=True,
+        color_continuous_scale="RdBu_r",
+        zmin=-1, zmax=1,
+        title="Pearson Correlation Matrix",
+        aspect="auto",
+    )
+    return fig
+
+def feature_target_summary(df, feature_cols: list) -> pd.DataFrame:
+    """Raanked table of each feature's Person correlation with high_rating."""
+    cols_to_use = feature_cols + ["high_rating"]
+    pdf = df.select(cols_to_use).toPandas()
+    
+    correlations = pdf.corr()["high_rating"].drop("high_rating")
+    
+    summary = pd.DataFrame({
+        "feature":     correlations.index,
+        "correlation": correlations.values.round(4),
+        "abs_corr":    correlations.abs().values.round(4),
+    }).sort_values("abs_corr", ascending=False).reset_index(drop=True)
+
+    return summary
